@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Dog listing", :type => :feature do
+RSpec.feature "Dog listing", js: true, type: :feature do
   scenario "User visits the dog index page" do
     dog = FactoryGirl.create(:dog)
     visit "/dogs"
