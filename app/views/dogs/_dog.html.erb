@@ -1,5 +1,5 @@
-<div class="dog" data-dog-id="<%= dog.id %>" id="dog_<%= dog.id %>">
-  <h3><%= dog.name %></h3>
+<div class="dog" data-purpose="to display a dog" data-dog-id="<%= dog.id %>" id="dog_<%= dog.id %>">
+  <h3><%= link_to dog.name, dog_path(dog) %></h3>
   <%= link_to 'more details', dog_path(dog) %>
 
 </div>
