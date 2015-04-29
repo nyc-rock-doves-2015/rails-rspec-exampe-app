@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#Dog(id: integer, name: string, age: integer, breed: string, texture: string, gender: string, created_at: datetime, updated_at: datetime) 
+
+Dog.create!({name:'Rover', age:3, breed:'Collie', gender:'M', texture:'smooth' })
+Dog.create!({name:'Bella', age:3, breed:'Lab', gender:'F', texture:'smooth' })
+
