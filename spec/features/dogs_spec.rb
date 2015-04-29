@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Dog listing", :type => :feature do
-  scenario "User creates the dog index page" do
+  scenario "User visits the dog index page" do
     dog = FactoryGirl.create(:dog)
     visit "/dogs"
     selector = "[data-dog-id=\"#{dog.id}\"]"
